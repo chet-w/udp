@@ -3,6 +3,19 @@ body {
     max-width: 1920px;
     margin: 0 !important;
     padding: 0 !important;
+    font-family: 'PT Serif', serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #F1B908;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    transform: scale(1.5);
 }
 
 header {
@@ -15,6 +28,7 @@ header {
     left: 0;
     height: 108px;
     z-index: 10;
+    font-family: 'PT Serif', serif; 
 }
 
 .container {
@@ -31,7 +45,7 @@ header .container .logo img {
 
 
 header nav {
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 45px;
     font-size: 14pt;
 }
@@ -59,6 +73,13 @@ app-root{
     height: 88%;
     padding-bottom: 200px;
 }
+
+.comp-body{
+    width: 90%;
+    margin-left: 5%;
+}
+
+
 
 footer {
     position: absolute;

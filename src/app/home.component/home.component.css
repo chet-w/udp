@@ -1,0 +1,39 @@
+.hero-banner{
+    position: relative;
+    width: 101%;
+    background-image: url("../assets/img/hero.png");
+    text-align: center;
+    height: 70%;
+    margin-top: -2%;
+    font-family: 'PT Serif', serif; 
+}
+
+.hero-banner h2 {
+    color: #ffffff;
+    font-weight: normal;
+    padding-top: 12.5%;
+}
+
+.yellow {
+    color: #F1B908;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    border: solid #ff0000;
+}
+
+h1 {
+    font-size: 30pt;
+    position: relative;
+}
+
+h1:before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 1.5px solid #F1B908;
+}
