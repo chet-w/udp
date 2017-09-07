@@ -1,0 +1,24 @@
+.services-list {
+    width: 110%;
+    column-count: 4;
+    margin: 2% 0 0 -5%;
+    background-color: #F8F8F8;
+    transition: all 0.2s ease;  
+    padding: 10px;
+
+}
+
+
+.services-list li {
+    display: inline-table;
+    width: 100%;
+  
+}
+
+.services-list .tick {
+    color: #F1B908;
+}
+
+.comp-body a:hover {
+    color: #F1B908;
+}

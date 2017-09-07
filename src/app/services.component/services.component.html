@@ -1,1 +1,18 @@
-<h2>Services</h2>
+<div class="comp-body">
+    <div class="content-white">
+        <h1>Services</h1>
+        <p>
+            Our facilities feature industrial standard printing machines and are equipped with
+            professional design software to ensure that we can deliver the highest quality for 
+            your needs.
+        </p>
+        <h3>Our services include: </h3>
+        <div class="services-list">
+            <ul *ngFor="let job of jobs">
+                <li><span class="tick">✔ </span>{{job}}</li>
+            </ul>
+        </div>
+        <h3>Got a special request?</h3>
+        <p><a routerLink="/contact">Get in touch</a> and we'll see what we can do for you!</p>
+    </div>
+</div>

@@ -116,6 +116,29 @@ footer ul li ul li{
     font-size: 8;
 }
 
+.underline {
+    content: "";
+    margin: -5% 0 0 25%;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 1.5px solid #F1B908;
+}
+
+h1 {
+    font-size: 30pt;
+    position: relative;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 1.5px solid #F1B908;
+}
+
 
 @media (max-width: 997px){
     header nav {

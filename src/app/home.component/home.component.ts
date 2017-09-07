@@ -7,18 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = 'Home'; 
-  jobs = [
-    "Graphic Designing",
-    "Digital Printing",
-    "Photocopying",
-    "Wide Format Posters",
-    "Guillotining",
-    "Laminating",
-    "Spiral & Wire Binding",
-    "Business Cards",
-    "Promotional Flyers",
-    "Signs",
-    "Photo Re-touching",
-    "Stickers"
-  ]
+  
 } 
