@@ -1,0 +1,13 @@
+h1 {
+    font-size: 30pt;
+    position: relative;
+}
+
+h1:before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 1.5px solid #F1B908;
+}

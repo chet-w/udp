@@ -79,11 +79,9 @@ app-root{
     margin-left: 5%;
 }
 
-
-
 footer {
     position: absolute;
-    margin-top: 80%;
+    margin-top: 10%;
     width: 90%;
     height: 100px;
     background-color: #000000;
