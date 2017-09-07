@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ServicesComponent {
   title = 'Services';  
-
+  content = [
+    "Our facilities feature industrial standard printing machines and are equipped with professional design software to ensure that we can deliver the highest quality for your needs."
+  ];
   jobs = [
     "Graphic Designing",
     "Digital Printing",
