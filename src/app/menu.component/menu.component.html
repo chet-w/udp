@@ -1,0 +1,17 @@
+<div id="myNav" class="overlay">
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a routerLink="./home" (click)="closeCross()">Home</a>
+        <a routerLink="./about" (click)="closeCross()">About</a>
+        <a routerLink="./services" (click)="closeCross()">Services</a>
+        <a routerLink="./" (click)="closeCross()">Samples</a>
+        <a routerLink="./contact" (click)="closeCross()">Contact</a>
+    </div>
+        
+</div>
+
+<div class="hamburger" (click)="flipCross()">
+    <div class="bar" id="bar-one"></div>
+    <div class="bar" id="bar-two"></div>
+    <div class="bar" id="bar-three"></div>
+</div>

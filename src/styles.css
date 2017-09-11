@@ -139,16 +139,57 @@ h1:before {
     border-bottom: 1.5px solid #F1B908;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    transition: all 0.2s ease;
+    
+}
+
+
+
 
 @media (max-width: 997px){
+    
+    header {
+        position: relative;
+        margin-top: -21%;
+    }
+    
     header nav {
         display: none;
     }
-    
+
     header .logo {
         text-align: center;
         margin-right: 40%;
     }
+
+    .hamburger {
+        margin-left: 75%;
+        margin-top: -15%;
+        display: block;
+        position: fixed;
+        z-index: 20;
+    }
+    
+    .hamburger .bar {
+        height: 3px;
+        width: 30px;
+        margin: 5px;
+        opacity: 1;
+        background-color: #F1B908;
+        
+    }
+
+    #bar-two {
+        opacity: 1;
+    }
+
+    
 }
 
 
