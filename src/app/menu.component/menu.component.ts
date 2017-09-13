@@ -37,7 +37,9 @@ import { Component } from '@angular/core';
         this.barTwo.style.opacity = "0"; 
         this.barThree.style.transform = "rotate(45deg) translate(-8px, -8px)";
         this.nav.style.width = "100%";
-        this.toggleScroll();
+        var doc = document.getElementsByTagName("html");
+        doc[0].style.overflowY = "hidden";
+        doc[0].style.overflowX = "hidden";
     }
 
     public closeCross(){
@@ -46,12 +48,9 @@ import { Component } from '@angular/core';
         this.barTwo.style.opacity = "1"; 
         this.barThree.style.transform = "rotate(0) translate(0)";
         this.nav.style.width = "0%";
-        console.log(this.nav);
+        var doc = document.getElementsByTagName("html");
+        doc[0].style.overflowY = "scroll";
+        doc[0].style.overflowX = "scroll";
     }
 
-    public toggleScroll(){
-       var doc = document.getElementsByTagName("html");
-       doc[0].style.overflowY = "hidden";
-
-    }
 }
