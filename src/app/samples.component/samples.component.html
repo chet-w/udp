@@ -6,7 +6,7 @@
             <th *ngFor="let s of sampleTypes" (click) = "showSample(s.title)">{{s.title}}</th>
         </thead>
     </table>
-    <div class="sample-body"> 
+    <div class="sub-comp"> 
         <div *ngIf="this.sampleTypes[0].show == true"><posters></posters></div>
         <div *ngIf="this.sampleTypes[1].show == true"><logos></logos></div>
         <div *ngIf="this.sampleTypes[2].show == true"><business-cards></business-cards></div>
@@ -16,7 +16,7 @@
         <div *ngIf="this.sampleTypes[6].show == true"><brochures></brochures></div>
         <div *ngIf="this.sampleTypes[7].show == true"><letterheads></letterheads></div>
         <div *ngIf="this.sampleTypes[8].show == true"><newsletters></newsletters></div>
-        
+  
     </div>
     
 </div>

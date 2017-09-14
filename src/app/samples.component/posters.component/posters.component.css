@@ -1,0 +1,11 @@
+img {
+    height: 500px;
+    box-shadow: 0 4px 10px #777777;
+}
+
+.desc-right {
+    float: right;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}

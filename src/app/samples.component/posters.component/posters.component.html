@@ -1,1 +1,11 @@
 <h2>Posters</h2>
+
+<div class="sample-body">
+    <div *ngFor="let x of images">
+        <img src="{{x.path}}" class="rellax img-left" data-rellax-speed="-4">
+        <span class="rellax desc-{{x.textPos}}" data-rellax-speed="7">
+            {{x.desc}}
+        </span>
+    </div>
+
+</div>
