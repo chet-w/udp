@@ -1,0 +1,17 @@
+.sample-nav {
+    border: solid;
+
+}
+
+table {
+    margin-left: 10%;
+}
+
+th {
+    padding: 5px;
+    cursor: pointer;
+}
+
+th:hover {
+    color: #F1B908;
+}

@@ -1,0 +1,24 @@
+<div class="comp-body">
+    <h1>Samples</h1>
+    <p>Feel free to browse through our library of Samples</p>
+    <table>
+        <thead>
+            <th *ngFor="let s of sampleTypes" (click) = "showSample(s.title)">{{s.title}}</th>
+        </thead>
+    </table>
+    <div class="sample-body"> 
+        <div *ngIf="this.sampleTypes[0].show == true"><posters></posters></div>
+        <div *ngIf="this.sampleTypes[1].show == true"><logos></logos></div>
+        <div *ngIf="this.sampleTypes[2].show == true"><business-cards></business-cards></div>
+        <div *ngIf="this.sampleTypes[3].show == true"><certificates></certificates></div>
+        <div *ngIf="this.sampleTypes[4].show == true"><invitations></invitations></div>
+        <div *ngIf="this.sampleTypes[5].show == true"><flyers></flyers></div>
+        <div *ngIf="this.sampleTypes[6].show == true"><brochures></brochures></div>
+        <div *ngIf="this.sampleTypes[7].show == true"><letterheads></letterheads></div>
+        <div *ngIf="this.sampleTypes[8].show == true"><newsletters></newsletters></div>
+        
+    </div>
+    
+</div>
+
+

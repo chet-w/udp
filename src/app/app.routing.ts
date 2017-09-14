@@ -5,7 +5,7 @@ import { HomeComponent } from './home.component/home.component';
 import { AboutComponent } from './about.component/about.component';
 import { ContactComponent } from './contact.component/contact.component';
 import { ServicesComponent } from './services.component/services.component';
-
+import { SamplesComponent } from './samples.component/samples.component';
 
 const appRoutes: Routes = [
     {
@@ -27,6 +27,10 @@ const appRoutes: Routes = [
     {
         path: 'services',
         component: ServicesComponent
+    },
+    {
+        path: 'samples',
+        component: SamplesComponent
     }
 ];
 
