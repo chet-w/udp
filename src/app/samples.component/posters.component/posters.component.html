@@ -2,10 +2,20 @@
 
 <div class="sample-body">
     <div *ngFor="let x of images">
-        <img src="{{x.path}}" class="rellax img-left" data-rellax-speed="-4">
-        <span class="rellax desc-{{x.textPos}}" data-rellax-speed="7">
-            {{x.desc}}
-        </span>
+        <div class="sample-container background-{{x.bg}}">
+            <div *ngIf="x.pos == 'left'">
+                <img src="{{x.path}}" class="img-{{x.pos}}">
+                <div class="desc-{{x.textPos}}">
+                    {{x.desc}}
+                </div>
+            </div>
+            <div *ngIf="x.pos == 'right'">
+                <div class="desc-{{x.textPos}}">
+                    {{x.desc}}
+                </div>
+                <img src="{{x.path}}" class="img-{{x.pos}}">
+            </div>
+        </div>
     </div>
 
 </div>

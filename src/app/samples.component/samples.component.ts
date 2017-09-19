@@ -11,7 +11,7 @@ export class SamplesComponent {
   private sampleTypes = [
     {
       title: "Posters",
-      show: false
+      show: true
     },
     {
       title: "Logos",
