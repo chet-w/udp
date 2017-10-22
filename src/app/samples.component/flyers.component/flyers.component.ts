@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'flyers',
-  templateUrl: './flyers.component.html',
-  styleUrls: ['./flyers.component.css']
+  templateUrl: '../sample.component.html',
+  styleUrls: ['../samples.component.css']
+  
 })
 export class FlyersComponent {
   title = 'Flyers';  

@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'business-cards',
-  templateUrl: './businesscards.component.html',
-  styleUrls: ['./businesscards.component.css']
+  templateUrl: '../sample.component.html',
+  styleUrls: ['../samples.component.css']
+  
 })
 export class BusinessCardsComponent {
   title = 'Business-cards';  

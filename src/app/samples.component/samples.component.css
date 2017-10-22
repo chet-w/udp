@@ -15,3 +15,72 @@ th {
 th:hover {
     color: #F1B908;
 }
+
+
+.underline {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 30%;
+    margin-left: 10%;
+    box-shadow: 0 4px 10px #777777;
+    transition: all 0.2s ease;
+    display: inline;
+    position: relative;
+}   
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.img-right {
+    margin-left: 60%;
+    margin-top: -27.5%;
+    display: inline;
+    z-index: 1;
+}
+
+.desc-right {
+    position: relative;
+    border: none;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.desc-left {
+    position: relative;
+    top: 10%;
+    height: 100%;
+    border: none;
+    display: inline-block;
+    width: 50%;
+    padding: 5% 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 2;
+}
+
+.desc-left h3 {
+    margin-top: 25%;
+}
+
+.sample-container {
+    border: none;
+    width: 115%;
+    margin-left: -7.5%;
+    padding: 20px 0;
+}
+
+.background-accent {
+    background-color: #FFF1C8;
+}

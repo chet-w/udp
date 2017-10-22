@@ -1,16 +1,19 @@
-<h2>Posters</h2>
-
 <div class="sample-body">
+    <h2>{{title}}</h2>
     <div *ngFor="let x of images">
         <div class="sample-container background-{{x.bg}}">
             <div *ngIf="x.pos == 'left'">
                 <img src="{{x.path}}" class="img-{{x.pos}}">
                 <div class="desc-{{x.textPos}}">
+                    <h3>{{x.title}}</h3>
+                    <div class="underline"></div>
                     {{x.desc}}
                 </div>
             </div>
             <div *ngIf="x.pos == 'right'">
                 <div class="desc-{{x.textPos}}">
+                    <h3>{{x.title}}</h3>
+                    <div class="underline"></div>
                     {{x.desc}}
                 </div>
                 <img src="{{x.path}}" class="img-{{x.pos}}">

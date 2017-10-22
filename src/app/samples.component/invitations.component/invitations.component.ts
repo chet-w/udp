@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'invitations',
-  templateUrl: './invitations.component.html',
-  styleUrls: ['./invitations.component.css']
+  templateUrl: '../sample.component.html',
+  styleUrls: ['../samples.component.css']
+  
 })
 export class InvitationsComponent {
   title = 'Invitations';  

@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'posters',
-  templateUrl: './posters.component.html',
-  styleUrls: ['./posters.component.css']
+  templateUrl: '../sample.component.html',
+  styleUrls: ['../samples.component.css']
+  
 })
 export class PostersComponent {
   title = 'Posters';  
@@ -18,9 +19,9 @@ export class PostersComponent {
       bg: "normal"
     },
     {
-      title: "Billboard",
-      path: "../../assets/img/samples/posters/BillBoard.jpg",
-      desc: "A high-resolution, large format Billboard advertisement poster for an upcoming Real Estate section",
+      title: "Vision Specialists",
+      path: "../../assets/img/samples/posters/Vision-Specialists-Poster.jpg",
+      desc: "A large, high-resolution advertising poster for Vision Specialists",
       pos: "right",
       textPos: "left",
       bg: "accent"
@@ -42,17 +43,17 @@ export class PostersComponent {
       bg: "accent"
     },
     {
-      title: "Bathiya n Santhush",
-      path: "../../assets/img/samples/posters/BnS-Musical-concert-poster.jpg",
-      desc: "An advertising poster for a recent musical tour by Sri Lankan music duo Bathiya n Santhush",
+      title: "Heating Poster",
+      path: "../../assets/img/samples/posters/Heating-Poster.jpg",
+      desc: "An advertising poster for Noel Leeming stores to promote sales on heating appliances",
       pos: "left",
       textPos: "right",
       bg: "normal"
     },
     {
-      title: "Heating Poster",
-      path: "../../assets/img/samples/posters/Heating-Poster.jpg",
-      desc: "An advertising poster for Noel Leeming stores to promote sales on heating appliances",
+      title: "Pak 'n' Save Kapiti",
+      path: "../../assets/img/samples/posters/Pak-N-Save-Values-poster1.jpg",
+      desc: "A motivational poster showcasing some of the key values of Pak 'n' Save Kapiti",
       pos: "right",
       textPos: "left",
       bg: "accent"
