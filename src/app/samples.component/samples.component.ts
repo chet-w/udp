@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+
 
 @Component({
   selector: 'samples',
   templateUrl: './samples.component.html',
-  styleUrls: ['./samples.component.css']
+  styleUrls: ['./samples.component.css'],
+  animations: [
+    
+        trigger('main', [
+          transition('void => *', [
+            style({opacity: '0'}),
+            animate('500ms ease')
+          ])
+        ])
+    
+      ]
 })
 export class SamplesComponent {
   

@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
 
 @Component({
   selector: 'about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  animations: [
+    
+        trigger('main', [
+          transition('void => *', [
+            style({opacity: '0'}),
+            animate('500ms ease')
+          ])
+        ])
+    
+      ]
 })
 export class AboutComponent {
   title = 'About';  

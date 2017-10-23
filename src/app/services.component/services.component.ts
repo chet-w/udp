@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+
 
 @Component({
   selector: 'services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  styleUrls: ['./services.component.css'],
+  animations: [
+    
+        trigger('main', [
+          transition('void => *', [
+            style({opacity: '0'}),
+            animate('500ms ease')
+          ])
+        ])
+    
+      ]
 })
 export class ServicesComponent {
   title = 'Services';  

@@ -18,8 +18,6 @@ import { slideInOutAnimation } from '../_animations/animations';
   ]
 })
 export class HomeComponent {
-
-  state: string = 'active';  
   
   title = 'Home'; 
   
