@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+import { slideInOutAnimation } from '../_animations/animations';
 
-
+  
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+
+    trigger('main', [
+      transition('void => *', [
+        style({opacity: '0'}),
+        animate('500ms ease')
+      ])
+    ])
+
+  ]
 })
 export class HomeComponent {
+
+  state: string = 'active';  
+  
   title = 'Home'; 
   
   content = [

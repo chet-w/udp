@@ -61,6 +61,11 @@
     transition: all 0.2s ease;
 }
 
+.mainb {
+    border: none;
+    height: 100%;
+}
+
 
 
 .showcase-block:hover {
