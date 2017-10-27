@@ -1,8 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 import { routing } from './app.routing';
 
@@ -48,9 +49,12 @@ import { PostersComponent } from './samples.component/posters.component/posters.
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AnimateOnScrollModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

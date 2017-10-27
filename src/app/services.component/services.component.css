@@ -12,7 +12,6 @@
 .services-list li {
     display: inline-table;
     width: 100%;
-  
 }
 
 .services-list .tick {
@@ -21,4 +20,8 @@
 
 .comp-body a:hover {
     color: #F1B908;
+}
+
+footer {
+    margin-top: 10%;
 }

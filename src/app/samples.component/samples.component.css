@@ -1,6 +1,14 @@
+table {
+    position: relative;
+}
+
 .sample-nav {
     border: solid;
 
+}
+
+.sample-container{
+    visibility: hidden;
 }
 
 table {
@@ -10,6 +18,7 @@ table {
 th {
     padding: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 th:hover {
@@ -83,4 +92,8 @@ img:hover {
 
 .background-accent {
     background-color: #FFF1C8;
+}
+
+footer {
+    margin-top: 10%;
 }

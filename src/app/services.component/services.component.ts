@@ -1,5 +1,5 @@
 import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'services',
@@ -17,6 +17,12 @@ import { Component, trigger, state, style, transition, animate, keyframes } from
       ]
 })
 export class ServicesComponent {
+
+  constructor(private titleService: Title){
+    this.titleService.setTitle( "Services | Unique Design & Print" );
+
+  }
+
   title = 'Services';  
   content = [
     "Our facilities feature industrial standard printing machines and are equipped with professional design software to ensure that we can deliver the highest quality for your needs."

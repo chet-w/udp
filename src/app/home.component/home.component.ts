@@ -1,5 +1,6 @@
 import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
 import { slideInOutAnimation } from '../_animations/animations';
+import { Title } from '@angular/platform-browser';
 
   
 @Component({
@@ -18,6 +19,11 @@ import { slideInOutAnimation } from '../_animations/animations';
   ]
 })
 export class HomeComponent {
+
+  constructor(private titleService: Title){
+    this.titleService.setTitle( "Home | Unique Design & Print" );
+
+  }
   
   title = 'Home'; 
   

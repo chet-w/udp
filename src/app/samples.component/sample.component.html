@@ -1,7 +1,7 @@
 <div [@main] = 'state'  class="sample-body">
     <h2>{{title}}</h2>
     <div *ngFor="let x of images">
-        <div class="sample-container background-{{x.bg}}">
+        <div class="sample-container background-{{x.bg}} animated" animateOnScroll animationName="fadeIn">
             <div *ngIf="x.pos == 'left'">
                 <img src="{{x.path}}" class="img-{{x.pos}}">
                 <div class="desc-{{x.textPos}}">

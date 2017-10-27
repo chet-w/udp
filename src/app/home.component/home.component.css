@@ -1,11 +1,12 @@
 .hero-banner{
     position: relative;
-    width: 101%;
-    background-image: url("../assets/img/hero.png");
+    width: 115%;
+    background-image: url(../assets/img/hero.png);
     text-align: center;
-    height: 70%;
+    padding-bottom: 15%;
     margin-top: -2%;
-    font-family: 'PT Serif', serif; 
+    margin-left: -7.5%;
+    font-family: 'PT Serif', serif;
 }
 
 .hero-banner h2 {

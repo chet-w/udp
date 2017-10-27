@@ -45,7 +45,7 @@ header .container .logo img {
 
 
 header nav {
-    margin-left: 40%;
+    margin-left: 50%;
     margin-top: 45px;
     font-size: 14pt;
 }
@@ -77,11 +77,11 @@ app-root{
 .comp-body{
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 10%;
 }
 
 footer {
     position: absolute;
-    margin-top: 70%;
     width: 90%;
     height: 100px;
     background-color: #000000;

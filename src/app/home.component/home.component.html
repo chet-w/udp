@@ -1,39 +1,37 @@
-<div [@main] = 'state' class="mainb">
+<div class="comp-body" [@main]>
     <div class="hero-banner">
         <h2> Your Friendly One-Stop <span class="yellow">Design</span> and <span class="yellow">Digital Print</span> Shop.</h2>
     </div>
-    <div class="comp-body">
-        <div class="content-white">
-            <h1>Welcome</h1>
-            <p>{{content[0]}}</p>
-            <p>{{content[1]}}</p>
-            <p>{{content[2]}}</p>
-            <p>{{content[3]}}</p>
-        </div>
-        <div class="content-yellow">
-            <h1>What We Do</h1>
-            <div class="showcase">
-                <div class="showcase-block">
-                    <h3>{{showcase[0].title}}</h3>
-                    <div class="underline"></div>
-                    <p>{{showcase[0].detail}}</p>
-                </div>
-                <div class="showcase-block">
-                    <h3>{{showcase[1].title}}</h3>
-                    <div class="underline"></div>
-                    <p>{{showcase[1].detail}}</p>
-                </div>
-                <div class="showcase-block">
-                    <h3>{{showcase[2].title}}</h3>
-                    <div class="underline"></div>
-                    <p>{{showcase[2].detail}}</p>
-                </div>
-                <p>Unique Design and Print is committed to delivering quality products while 
-                    providing a friendly, end-to-end service.
-                </p>
-                <a routerLink="/services"><button>Check out our full list of services here</button></a>
+    <div class="content-white">
+        <h1>Welcome</h1>
+        <p>{{content[0]}}</p>
+        <p>{{content[1]}}</p>
+        <p>{{content[2]}}</p>
+        <p>{{content[3]}}</p>
+    </div>
+    <div class="content-yellow">
+        <h1>What We Do</h1>
+        <div class="showcase animated" animateOnScroll animationName="fadeIn">
+            <div class="showcase-block">
+                <h3>{{showcase[0].title}}</h3>
+                <div class="underline"></div>
+                <p>{{showcase[0].detail}}</p>
             </div>
-            
+            <div class="showcase-block">
+                <h3>{{showcase[1].title}}</h3>
+                <div class="underline"></div>
+                <p>{{showcase[1].detail}}</p>
+            </div>
+            <div class="showcase-block">
+                <h3>{{showcase[2].title}}</h3>
+                <div class="underline"></div>
+                <p>{{showcase[2].detail}}</p>
+            </div>
+            <p>Unique Design and Print is committed to delivering quality products while 
+                providing a friendly, end-to-end service.
+            </p>
+            <a routerLink="/services"><button>Check out our full list of services here</button></a>
         </div>
+        
     </div>
 </div>

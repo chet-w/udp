@@ -1,4 +1,5 @@
-import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+import { Component, trigger, state, style, transition, animate, keyframes, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -16,7 +17,19 @@ import { Component, trigger, state, style, transition, animate, keyframes } from
     
       ]
 })
-export class SamplesComponent {
+export class SamplesComponent implements OnInit{
+
+  private menu: Element;
+
+  constructor(private titleService: Title){
+    this.titleService.setTitle( "Samples | Unique Design & Print" );
+
+  }
+
+  ngOnInit(){
+    this.menu = document.getElementById("sample-menu");
+    console.log(this.menu);
+  }
   
   title = 'Samples';    
   private sampleTypes = [
@@ -101,4 +114,10 @@ export class SamplesComponent {
       }
     }
   }
+
+  public onScroll(){
+    console.log(this.menu.scrollTop);
+  }
+
+
 }

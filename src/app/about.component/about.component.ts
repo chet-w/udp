@@ -1,4 +1,5 @@
 import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'about',
@@ -16,6 +17,11 @@ import { Component, trigger, state, style, transition, animate, keyframes } from
       ]
 })
 export class AboutComponent {
+
+  constructor(private titleService: Title){
+    this.titleService.setTitle( "About | Unique Design & Print" );
+
+  }
   title = 'About';  
   content = [
     "Unique Design and Print Ltd was formed to provide a friendly high quality design and digital printing service at an affordable price combined with a personal touch. We can undertake all of the design and printing needs of our customers and provide all the appropriate technical advice to complete the job on time and always with a minimum of hassle.",

@@ -1,5 +1,5 @@
 import { Component, trigger, state, style, transition, animate, keyframes } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'contact',
@@ -17,5 +17,11 @@ import { Component, trigger, state, style, transition, animate, keyframes } from
       ]
 })
 export class ContactComponent {
+
+  constructor(private titleService: Title){
+    this.titleService.setTitle( "Contact | Unique Design & Print" );
+
+  }
+
   title = 'Contact';  
 }
