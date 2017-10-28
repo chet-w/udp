@@ -25,6 +25,10 @@ th:hover {
     color: #F1B908;
 }
 
+h3 {
+    text-align: center;
+}
+
 
 .underline {
     margin-top: -20px;
@@ -32,8 +36,7 @@ th:hover {
 }
 
 img {
-    width: 30%;
-    margin-left: 10%;
+    width: 75%;
     box-shadow: 0 4px 10px #777777;
     transition: all 0.2s ease;
     display: inline;
@@ -45,42 +48,28 @@ img:hover {
 }
 
 .img-right {
-    margin-left: 60%;
-    margin-top: -27.5%;
-    display: inline;
-    z-index: 1;
+    margin-left: 25%;
 }
 
 .desc-right {
-    position: relative;
-    border: none;
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    margin-top: 15%;
-    margin-left: 3%;
-    margin-right: 3%;
-    vertical-align: top;
+    padding: 0 0 0 10%;
     text-align: center;
 }
 
 .desc-left {
-    position: relative;
-    top: 10%;
-    height: 100%;
-    border: none;
-    display: inline-block;
-    width: 50%;
-    padding: 5% 0;
-    margin-left: 3%;
-    margin-right: 3%;
-    vertical-align: middle;
+    padding: 0 10% 0 0;
     text-align: center;
-    z-index: 2;
 }
 
-.desc-left h3 {
-    margin-top: 25%;
+.sample-full {
+    border: none;
+    width: 80%;
+}
+
+.sample-full td {
+    border: none;
+    vertical-align: middle;
+    width: 50%;
 }
 
 .sample-container {
@@ -93,6 +82,8 @@ img:hover {
 .background-accent {
     background-color: #FFF1C8;
 }
+
+
 
 footer {
     margin-top: 10%;

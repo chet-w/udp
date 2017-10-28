@@ -3,20 +3,28 @@
     <div *ngFor="let x of images">
         <div class="sample-container background-{{x.bg}} animated" animateOnScroll animationName="fadeIn">
             <div *ngIf="x.pos == 'left'">
-                <img src="{{x.path}}" class="img-{{x.pos}}">
-                <div class="desc-{{x.textPos}}">
-                    <h3>{{x.title}}</h3>
-                    <div class="underline"></div>
-                    {{x.desc}}
-                </div>
+                <table class="sample-full">
+                    <td>
+                        <img src="{{x.path}}" class="img-{{x.pos}}">
+                    </td>
+                    <td class="desc-{{x.textPos}}">   
+                        <h3>{{x.title}}</h3>
+                        <div class="underline"></div>
+                        {{x.desc}}   
+                    </td>
+                </table> 
             </div>
             <div *ngIf="x.pos == 'right'">
-                <div class="desc-{{x.textPos}}">
-                    <h3>{{x.title}}</h3>
-                    <div class="underline"></div>
-                    {{x.desc}}
-                </div>
-                <img src="{{x.path}}" class="img-{{x.pos}}">
+                <table class="sample-full">
+                    <td class="desc-{{x.textPos}}">
+                        <h3>{{x.title}}</h3>
+                        <div class="underline"></div>
+                        {{x.desc}}
+                    </td>
+                    <td>
+                        <img src="{{x.path}}" class="img-{{x.pos}}">
+                    </td>
+                </table>                
             </div>
         </div>
     </div>
