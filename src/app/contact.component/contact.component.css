@@ -30,23 +30,24 @@
 
 #facebook {
     background-image: url("./assets/img/facebook.png");
+    background-size: 70%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    background-size: 100%;
 }
 
 #email {
     background-image: url("./assets/img/email.png");
+    background-size: 70%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
 
 }
 
 #phone {
     background-image: url("./assets/img/phone.png");
+    background-size: 70%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    background-size: 100%;
 }
 
 .map, agm-map {
@@ -62,8 +63,35 @@ agm-map {
 
 }
 
-
-
 footer {
     margin-top: 10%;
+}
+
+@media (max-width: 997px){
+
+    .comp-body {
+        text-align: center;
+    }
+
+    h1:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 1px;
+        bottom: 0;
+        border-bottom: 1.5px solid #F1B908;
+        left: 45%;
+    }
+
+    .showcase-block {
+        width: 50%;
+        margin-left: 22.5%;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .map {
+        margin: 0;
+        width: 100%;
+    }
 }

@@ -6,6 +6,24 @@
             <th *ngFor="let s of sampleTypes" (click) = "showSample(s.title)">{{s.title}}</th>
         </thead>
     </table>
+
+    <div id="mob-sample-menu">
+        <table class="mob-sample-menu-row">
+            <thead>
+                <th *ngFor="let s of sampleTypes | slice:0:sampleTypes.length/2; let i = index" >
+                    <span *ngIf="i<sampleTypes.length/2">{{s.title}}</span>
+                </th>
+            </thead>
+        </table>
+        <table class="mob-sample-menu-row">
+            <tbody>
+                <th *ngFor="let s of sampleTypes | slice:sampleTypes.length/2:sampleTypes.length; let i = index" >
+                    <span>{{s.title}}</span>
+                </th>
+            </tbody>
+        </table>
+    </div>
+
     <div class="sub-comp"> 
         <div *ngIf="this.sampleTypes[0].show == true"><posters></posters></div>
         <div *ngIf="this.sampleTypes[1].show == true"><logos></logos></div>

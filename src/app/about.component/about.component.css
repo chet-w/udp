@@ -10,3 +10,24 @@
 footer {
     margin-top: 10%;
 }
+
+@media (max-width: 997px){
+
+    h1:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 1px;
+        bottom: 0;
+        border-bottom: 1.5px solid #F1B908;
+        left: 45%;
+    }
+
+    .content-white {
+        text-align: center;
+    }
+
+    .hasi {
+        display: none;
+    }
+}

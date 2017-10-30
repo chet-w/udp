@@ -83,8 +83,42 @@ img:hover {
     background-color: #FFF1C8;
 }
 
-
+#mob-sample-menu {
+    display: none;
+}
 
 footer {
     margin-top: 10%;
+}
+
+@media (max-width: 997px){
+
+    h1, p {
+        text-align: center;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 1px;
+        bottom: 0;
+        border-bottom: 1.5px solid #F1B908;
+        left: 45%;
+    }
+
+    #sample-menu {
+        display: none;
+    }
+
+    #mob-sample-menu {
+        display: block;
+    }
+
+    #mob-sample-menu table {
+        width: 100%;
+        margin: 0;
+    }
+
+    
 }
