@@ -5,7 +5,7 @@
             <div *ngIf="x.pos == 'left'">
                 <table class="sample-full">
                     <td>
-                        <a href="{{x.path}}" class="fancybox" rel="gallery" title="{{x.title}}"><img src="{{x.path}}" class="img-{{x.pos}}"></a>
+                        <a href="{{x.path}}" data-fancybox="group"><img src="{{x.path}}" class="img-{{x.pos}}"></a>
                     </td>
                     <td class="desc-{{x.textPos}}">   
                         <h3>{{x.title}}</h3>
@@ -22,7 +22,7 @@
                         {{x.desc}}
                     </td>
                     <td>
-                        <a href="{{x.path}}" class="fancybox" rel="gallery" title="{{x.title}}"><img src="{{x.path}}" class="img-{{x.pos}}"></a>
+                        <a href="{{x.path}}" data-fancybox="group"><img src="{{x.path}}" class="img-{{x.pos}}"></a>
                     </td>
                 </table>                
             </div>
