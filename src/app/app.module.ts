@@ -2,6 +2,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { AgmCoreModule } from '@agm/core';
 
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
@@ -50,7 +51,10 @@ import { PostersComponent } from './samples.component/posters.component/posters.
     FormsModule,
     HttpModule,
     routing,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBr92VXGi0GSpmdVsC7kt4lWrIw98Egq44'
+    })
   ],
   providers: [
     Title

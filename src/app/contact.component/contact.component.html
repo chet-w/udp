@@ -26,16 +26,24 @@
                 </div>
             </a>
         </div>
-        <h3>Or drop in for a chat at: </h3>
-        <p>Shop 3<br>
-            (Facing Laings Road – behind Rebel Sports)<br>
-            108-110 High Street<br>
-            Lower Hutt<br>
-            Wellington
-        </p>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.511278171955!2d174.89915331476536!3d-41.21062737928069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38aa55abe7a169%3A0x37172a65392c65a3!2sUnique+Design+and+Print+Ltd!5e0!3m2!1sen!2snz!4v1504764221285" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="bottom">
+            <div class="drop-in">
+                <h3>Or drop in for a chat at: </h3>
+                <p>Shop 3<br>
+                    (Facing Laings Road – behind Rebel Sports)<br>
+                    108-110 High Street<br>
+                    Lower Hutt<br>
+                    Wellington
+                </p>
+            </div>
+            <div class="map">
+                <agm-map [latitude]="lat" [longitude]="lng"  [zoom]="15">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </div>            
         </div>
+        
+         
     </div>
 
     

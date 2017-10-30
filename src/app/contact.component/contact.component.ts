@@ -24,4 +24,7 @@ export class ContactComponent {
   }
 
   title = 'Contact';  
+
+  lat: number = -41.210635;
+  lng: number = 174.901355;
 }

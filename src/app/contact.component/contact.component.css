@@ -49,12 +49,20 @@
     background-size: 100%;
 }
 
-.map iframe {
+.map, agm-map {
     width: 50%;
-    height: 400px;
-    margin: -15% 0 0 45%;
-    box-shadow: 0 4px 10px #777777;
+    height: 300px;
+    margin-left: 50%;
+    margin-top: -20%;
+    
 }
+
+agm-map {
+    width: 100%;
+
+}
+
+
 
 footer {
     margin-top: 10%;
