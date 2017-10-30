@@ -76,7 +76,8 @@
 @media (max-width: 997px){
 
     .hero-banner{
-        margin-top: -20px;
+        margin-top: -40px;
+        width: 113.75%;
     }
 
     .content-white, .content-yellow {
@@ -94,13 +95,15 @@
     }
 
     .showcase-block {
-        width: 50%;
-        padding: 0 10%;
+        width: 90%;
+        padding: 5%;
         margin-bottom: 10%;
     }
 
-    button {
+    .showcase button {
         margin-top: 10%;
+        font-size: 16pt;
+        padding: 10%;
     }
     
 }

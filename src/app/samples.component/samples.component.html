@@ -1,4 +1,4 @@
-<div class="comp-body">
+<div  [@main] = 'state' class="comp-body">
     <h1>Samples</h1>
     <p>Feel free to browse through our library of Samples</p>
     <table id="sample-menu" (scroll) = "this.onScroll()">
@@ -10,15 +10,22 @@
     <div id="mob-sample-menu">
         <table class="mob-sample-menu-row">
             <thead>
-                <th *ngFor="let s of sampleTypes | slice:0:sampleTypes.length/2; let i = index" >
-                    <span *ngIf="i<sampleTypes.length/2">{{s.title}}</span>
+                <th *ngFor="let s of sampleTypes | slice: 0:sampleTypes.length/3;">
+                    {{s.title}}
                 </th>
             </thead>
         </table>
         <table class="mob-sample-menu-row">
             <tbody>
-                <th *ngFor="let s of sampleTypes | slice:sampleTypes.length/2:sampleTypes.length; let i = index" >
-                    <span>{{s.title}}</span>
+                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length/3:sampleTypes.length * 0.67;" >
+                    {{s.title}}
+                </th>
+            </tbody>
+        </table>
+        <table class="mob-sample-menu-row">
+            <tbody>
+                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length * 0.67:sampleTypes.length; " >
+                    {{s.title}}
                 </th>
             </tbody>
         </table>

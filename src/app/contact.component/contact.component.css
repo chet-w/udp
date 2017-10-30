@@ -84,10 +84,10 @@ footer {
     }
 
     .showcase-block {
-        width: 50%;
-        margin-left: 22.5%;
+        width: 90%;
+        
         display: block;
-        padding-top: 5%;
+        padding: 5% 0;
     }
 
     .map {

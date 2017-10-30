@@ -153,10 +153,17 @@ h1:before {
 
 
 @media (max-width: 997px){
+
+    body {
+        font-size: 16pt;
+        overflow-x: hidden;
+    }
     
     header {
         position: relative;
         margin-top: -110px;
+        width: 100%;
+        padding: 0;
     }
     
     header nav {
@@ -165,7 +172,7 @@ h1:before {
 
     header .logo {
         text-align: center;
-        margin-right: 40%;
+        margin-right: 45%;
     }
 
     .hamburger {
