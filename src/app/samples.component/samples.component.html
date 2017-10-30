@@ -10,21 +10,21 @@
     <div id="mob-sample-menu">
         <table class="mob-sample-menu-row">
             <thead>
-                <th *ngFor="let s of sampleTypes | slice: 0:sampleTypes.length/3;">
+                <th *ngFor="let s of sampleTypes | slice: 0:sampleTypes.length/3;" (click) = "showSample(s.title)">
                     {{s.title}}
                 </th>
             </thead>
         </table>
         <table class="mob-sample-menu-row">
             <tbody>
-                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length/3:sampleTypes.length * 0.67;" >
+                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length/3:sampleTypes.length * 0.67;" (click) = "showSample(s.title)" >
                     {{s.title}}
                 </th>
             </tbody>
         </table>
         <table class="mob-sample-menu-row">
             <tbody>
-                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length * 0.67:sampleTypes.length; " >
+                <th *ngFor="let s of sampleTypes | slice: sampleTypes.length * 0.67:sampleTypes.length; " (click) = "showSample(s.title)" >
                     {{s.title}}
                 </th>
             </tbody>

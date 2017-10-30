@@ -172,7 +172,7 @@ h1:before {
 
     header .logo {
         text-align: center;
-        margin-right: 45%;
+        margin-right: 40%;
     }
 
     .hamburger {
@@ -194,6 +194,10 @@ h1:before {
 
     #bar-two {
         opacity: 1;
+    }
+
+    footer {
+        font-size: 14pt;
     }
 
     
